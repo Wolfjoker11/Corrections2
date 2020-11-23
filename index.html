@@ -33,7 +33,7 @@
                         <li class="nav-item nv1">
                             <a class="nav-link" href="#">Services</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img class="weblogo" src="img\Web_Logo.png"></a></li>
+                            <a class="nav-link d-none d-sm-block" href="#"><img class="weblogo" src="img\Web_Logo.png"></a></li>
                         <li class="nav-item nv1">
                             <a class="nav-link" href="#">Clients</a></li>
                         <li class="nav-item nv1">
@@ -86,10 +86,11 @@
                     that can be implemented successfully. <br> Our Immersion"
                     approach aligns us 'business partners' with our clients.</p>
             </div>
+            <img class="media-img" src="img\Web_CoilStarRed.png" alt="">
         </div>
 
         <section class="text-center media-section">
-            <img class="media-img" src="img\Web_CoilStarRed.png" alt="">
+            
             
             <div class="media-section-textbox"><br><br><br>
                 <div class="text-uppercase media-section-text">In the media</div>
@@ -163,7 +164,7 @@
                         days from now to grow your business and build your brand.
                     </div>
                      <div class="col-sm mt-5">
-                <a href="#" class="offers1_btn text-uppercase btn">sign up</a>
+                <a href="#" class="offers1_btn text-uppercase btn mb-4">sign up</a>
             </div>
                 </div>
 
@@ -188,7 +189,7 @@
                     </div>
                     
                     <div class="col-sm mt-6">
-                <a href="#" class="offers2_btn text-uppercase btn">get started</a>
+                <a href="#" class="offers2_btn text-uppercase btn mb-4">get started</a>
             </div>
                 </div>
 
@@ -361,15 +362,73 @@
 
 <!--CONTACT-US SECTION-->
 
-        <section class="">
+<section class="cotc-sec" >
+    <div class="container">
+        <div class="text-uppercase pt-5 text-center">
+            <h1 class="contact-section-text">CONTACT US</h1>
+            <p class="contact-section-text2">send a mail & we'll respond in an hour</p>
+        </div>
+        <br>
+        <div class="row mx-5">
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Name" id="username">
+                </div> <br>
+                <div class="form-group">
+                    <input type="email" class="emailform form-control is-invalid" placeholder="E-mail" id="password">
+                    <div class="invalid-feedback">
+                        Required
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-control is-invalid" placeholder="Title" id="password">
+                    <div class="invalid-feedback">
+                        Required
+                    </div>
+            </div>
+        </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+
+                
+                <div class="form-group">
+                    <textarea id="message" cols="30" rows="4" placeholder="Leave your message" class="form-control is-invalid"></textarea><br>
+                    <div class="reqbtn d-inline invalid-feedback">
+                        Required
+                    </div>
+                    <button class="float-right submitbtn btn btn-primary" type="submit">Submit</button>
+                    <br><br>
+                    <div class="float-left custom-checkbox">
+                    <input type="checkbox" id="cb1">
+                     <label for="cb1">Check to get H1.2016 our profile</label>
+                    </div>
+                    <!--
+                    <button class="float-right submitbtn btn btn-primary d-inline" type="submit">Submit</button>
+                    <br><br>
+                    <div class="custom-checkbox mr-2">
+                    <input type="checkbox" id="cb1">
+                     <label for="cb1">Check to get H1.2016 our profile</label>
+                    </div>-->
+
+            </div>
+        </div>
+        </div>
+        </div>
+    
+</section>
+
+
+<!--
+        <section>
             <div class="contact-section text-center">
                 <div class="contact-section-textbox"><br>
                     <div class="text-uppercase contact-section-text">Contact us</div>
                     <p class="text-uppercase contact-section-text2">send a mail & we'll respond in an hour</p>
                 </div>
 
-                <div class="friendsec row">
-                    <div class="col">
+                <div class="friendsec row ">
+                    <div class="divbox3 col">
                         <div class="form-group">
                             <input class="form-control" type="text" placeholder="Name" id="username">
                         </div> <br>
@@ -401,13 +460,15 @@
                             <input type="checkbox" id="cb1">
                              <label for="cb1">Check to get H1.2016 our profile</label>
                             </div>
-                            <!--
+
+                            <!--WAS ALREADY CLOSED
                             <div class="form-check custom-control custom-checkbox">
                                 <label class="form-check-label mr-2 custom-control-label">
                                     <input type="checkbox" 
                                     class="form-check-input custom-control-input"> Check to get H1.2016 our profile
                                 </label>
-                            </div>--->
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -415,7 +476,7 @@
                 <img class="contactstarimg" src="img\Web_CoilStarWhite.png">
             </div>
 
-        </section>
+        </section> --->
 
         <!--COPYRIGHT SECTION-->
 
