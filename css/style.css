@@ -19,10 +19,20 @@
     src: url('../css/fonts/woodford bourne-regular.otf') format("opentype");
   }
 
-  * {
+  *{
     box-sizing: border-box;
   }
 
+html, body {
+  overflow-x: hidden;
+}
+
+  @media (min-width: 576px) {
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 0rem !important;
+    padding-left: 0rem !important;
+}
+}
   .nav-item {
     padding-left: 15px;
     padding-right: 15px;/*
@@ -148,11 +158,11 @@
     letter-spacing: 0.3vw;
     font-family: 'myFirstFont4';
     color: #ff0101;
-    font-size: 2.6vw;
+    font-size: 32px;
 }
 
 .about-text {
-    font-size: 1vw;
+    font-size: 15px;
     font-family: 'myFirstFont4';
 }
 
@@ -287,14 +297,14 @@
     letter-spacing: 0.3vw;
     font-family: 'myFirstFont4';
     color: #ff0101;
-    font-size: 2.5vw;
+    font-size: 32px;
 }
 
 .media-section-text2 {
     letter-spacing: 0.1vw;
     font-family: 'myFirstFont4';
     color: #659999;
-    font-size: 0.9vw;
+    font-size: 10px;
     padding-top:10px ;
 }
 
@@ -322,7 +332,7 @@
 }
 
 .streaksmall {
-    max-width: 40px;
+    max-width: 60px;
     height: auto;
 }
 
@@ -417,55 +427,54 @@
 
 .croppedpaper {
   height: auto;
-  width: 20vw;
+  width: 200px;
 }
 
 .offersSection {
   padding-top: 5vw;
   padding-left: 10vw;
   padding-right: 10vw;
-  margin-right: 0px;
 }
 
 .offerings {
   font-family: 'myFirstFont4';
   background-color: #FF1C47;
   color: #fff;
-  letter-spacing: 0.3vw;
-  font-size: 2vw;
+  letter-spacing: 0.3vw;/*
+  font-size: 2vw;*/
   padding: 30px;
 }
 
 .offers1 {
   font-family: 'myFirstFont';
-  font-size: 4vw;
+  font-size: 55px;
   color: #FF6600;
 }
 .offers1_2 {
   font-family: 'myFirstFont';
-  transform: translate(0vw,-3.3vw);
+  transform: translate(0vw,-50px);
 }
 
 
 .offers2 {
   font-family: 'myFirstFont';
-  font-size: 4vw;
+  font-size: 55px;
   color: #66999A;
 }
 .offers2_2 {
   font-family: 'myFirstFont';
-  transform: translate(0vw,-3.3vw);
+  transform: translate(0vw,-50px);
 }
 
 
 .offers3 {
   font-family: 'myFirstFont';
-  font-size: 4vw;
+  font-size: 55px;
   color:#FF1C47;
 }
 .offers3_2 {
   font-family: 'myFirstFont';
-  transform: translate(0vw,-3.3vw);
+  transform: translate(0vw,-50px);
 }
 
 .offers0-1 {
@@ -484,25 +493,25 @@
 }
 
 .offersheading {
-  font-family: 'myFirstFont4';
-  font-size: 1vw;
+  font-family: 'myFirstFont4';/*
+  font-size: 1vw;*/
   margin-top: -4.5vw;
   font-weight: bold;
 }
 
 .offers1_text {
-  font-family: 'myFirstFont4';
-  font-size: 1vw;
+  font-family: 'myFirstFont4';/*
+  font-size: 1vw;*/
 }
 
 .offers2_text {
-  font-family: 'myFirstFont4';
-  font-size: 1vw;
+  font-family: 'myFirstFont4';/*
+  font-size: 1vw;*/
 }
 
 .offers3_text {
-  font-family: 'myFirstFont4';
-  font-size: 1vw;
+  font-family: 'myFirstFont4';/*
+  font-size: 1vw;*/
 }
 
 .offersbtn {
@@ -556,15 +565,22 @@
   font-family: 'myFirstFont';
   color: #fff;
   padding-top: 4vw;
-  font-size: 6vw;
-  
+  font-size: 70px;
+  letter-spacing: 0.2vw;
+}
+
+@media (min-width: 1200px){
+  .digitalmheading {
+    font-family: 'myFirstFont';
+    color: #fff;
+    padding-top: 4vw;
+    font-size: 90px;
+  }
 }
 
 
 .digitalmrow {
   padding-top:5vw;
-  margin-right: 0px;
-  padding-right: 0px;
   
 }
 
@@ -572,7 +588,13 @@
   height: auto;
   width: 50vw;
 }
-
+/*
+@media (min-width: 576px){
+  .digitalmimg {
+    margin-left: 100px !important;
+  }
+}
+*/
 @media (min-width: 1200px){
   .cont-a {
     max-width: 1500px;
@@ -587,21 +609,49 @@
 
 .digitalmp {
   font-family: 'myFirstFont4';
-  font-size: 0.7vw;
+  font-size: 10px;
   color: #FBF008;
   margin-top: -1vw;
   letter-spacing: 0.2vw;
 }
-
-.digitalmptextbtn {
-  transform: translate(-4vw,0vw);
-  padding-left: 5vw;
+/*
+@media (min-width: 1200px){
+  .digitalmptextbtn {
+    transform: translate(-4vw,0vw);
+    padding-left: 5vw;
+  }
 }
+*/
+
+@media (min-width: 992px){
+  .digitalmtext {
+    font-family: 'myFirstFont4';
+    color: #fff;/*
+    width: 100%;*/
+  }
+}
+
+
+/*
+@media (min-width: 992px){
+  .digitalmimg {
+    width: 100%;
+  }
+}*/
+
+
+/*
+@media (min-width: 576px){
+  .digitalmptextbtn {
+    display: block !important;
+  }
+}
+*/
 
 .digitalmtext {
   font-family: 'myFirstFont4';
-  color: #fff;
-  font-size: 1vw;
+  color: #fff;/*
+  font-size: 1vw;*/
 }
 
 .tnds {
@@ -654,8 +704,9 @@
   height: auto;
 }
 
+
 .digitalmbtn {
-      font-size: 1.5vw;
+      font-size: 20px;
       border-radius: 0vw;
       font-family: 'myFirstFont4';
       letter-spacing: 0.1vw;
@@ -667,14 +718,14 @@
   letter-spacing: 0.3vw;
   font-family: 'myFirstFont4';
   color: #ff0101;
-  font-size: 2.5vw;
+  font-size: 32px;
 }
 
 .friends-section-text2 {
   letter-spacing: 0.1vw;
   font-family: 'myFirstFont4';
   color: #000000;
-  font-size: 0.9vw;
+  font-size: 10px;
   padding-top:10px ;
 }
 
@@ -697,14 +748,14 @@
   letter-spacing: 0.3vw;
   font-family: 'myFirstFont4';
   color: #000000;
-  font-size: 2.5vw;
+  font-size: 32px;
 }
 
 .contact-section-text2 {
   letter-spacing: 0.1vw;
   font-family: 'myFirstFont4';
   color: #ff0101;
-  font-size: 0.9vw;
+  font-size: 10px;
   padding-top:8px ;
 }
 
@@ -925,7 +976,7 @@ input[type="email"]::placeholder { /* Firefox, Chrome, Opera */
   padding: 2vw;
   padding-top: 3vw;
   font-family: 'myFirstFont4';
-  font-size: 0.8vw;
+  font-size: 10px;
   letter-spacing: 0.2vw;
 }
 
@@ -933,7 +984,7 @@ input[type="email"]::placeholder { /* Firefox, Chrome, Opera */
   background-color: black;
   color: white;
   font-family: 'myFirstFont4';
-  font-size: 0.8vw;
+  font-size: 10px;
 }
 
 .logosm {
