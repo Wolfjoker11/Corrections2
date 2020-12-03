@@ -40,6 +40,13 @@ html, body {
     letter-spacing: 0.1vw;
   }
 
+  .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    /* border-color: rgba(0,0,0,.1); */
+    border: none;
+    outline: none;
+}
+
   @media (min-width: 1200px){
     .nav-item {
       font-size: 0.7vw !important;
@@ -88,7 +95,19 @@ html, body {
   }
 
   .navbar {
-    padding: 0px 0px !important;
+    padding: 0px 0px;
+  }
+
+  @media (min-width: 370px){
+    .navbar {
+      padding: 8px 0px;
+    }
+  }
+
+  @media (min-width: 997px){
+    .navbar {
+      padding: 0px 0px;
+    }
   }
 
  
@@ -445,12 +464,39 @@ html, body {
   padding: 30px;
 }
 
-.offers1 {
+.offers {
   font-family: 'myFirstFont';
   font-size: 55px;
-  color: #FF6600;
-  margin-bottom: 63px;
+  margin-bottom: 20px;
 }
+
+@media (min-width: 992px){
+  .offers {
+    font-family: 'myFirstFont';
+    font-size: 55px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1500px){
+  .offers {
+    font-family: 'myFirstFont';
+    font-size: 55px;
+    margin-bottom: 70px;
+  }
+}
+
+.offers1 {
+  color: #FF6600;
+}
+.offers2 {
+  color: #66999A;
+}
+.offers3 {
+  color:#FF1C47;
+}
+
+
 .offers1_2 {
   font-family: 'myFirstFont';/*
   transform: translate(0vw,-50px);*/
@@ -458,38 +504,12 @@ html, body {
 }
 
 
-.offers2 {
-  font-family: 'myFirstFont';
-  font-size: 55px;
-  color: #66999A;
-  margin-bottom: 63px;
-}
-.offers2_2 {
-  font-family: 'myFirstFont';/*
-  transform: translate(0vw,-50px);*/
-  margin-top: -45px;
-}
-
-
-.offers3 {
-  font-family: 'myFirstFont';
-  font-size: 55px;
-  color:#FF1C47;
-  margin-bottom: 63px;
-
-}
-.offers3_2 {
-  font-family: 'myFirstFont';
-  /*
-  transform: translate(0vw,-50px);*/
-  margin-top: -45px;
-}
 
 .offers0-1 {
   padding-right: 5vw;
   padding-left: 5vw;
 }
-
+/*
 .offers0-2 {
   padding-right: 5vw;
   padding-left: 5vw;
@@ -498,7 +518,7 @@ html, body {
 .offers0-3 {
   padding-right: 5vw;
   padding-left: 5vw;
-}
+} */
 
 .offersheading {
   font-family: 'myFirstFont4';/*
@@ -512,15 +532,6 @@ html, body {
   font-size: 1vw;*/
 }
 
-.offers2_text {
-  font-family: 'myFirstFont4';/*
-  font-size: 1vw;*/
-}
-
-.offers3_text {
-  font-family: 'myFirstFont4';/*
-  font-size: 1vw;*/
-}
 
 .offersbtn {
   padding-left: 10vw;
@@ -529,8 +540,8 @@ html, body {
 }
 
 .offers1_btn {
-  padding-right: 4vw;
-  padding-left: 4vw;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
   border-radius: 0px;
   border:2px solid #EBEBEB;
   color: #000000;
@@ -539,29 +550,17 @@ html, body {
   
 }
 
-.offers2_btn {
-  padding-right: 2.5vw;
-  padding-left: 2.5vw;
-  border-radius: 0px;
-  border:2px solid #EBEBEB;
-  color: #000000;
-  font-family: 'myFirstFont4';
-  letter-spacing: 0.1vw;
-}
-
-.offers3_btn {
-  padding-right: 2.5vw;
-  padding-left: 2.5vw;
-  border-radius: 0px;
-  border:2px solid #EBEBEB;
-  color: #000000;
-  font-family: 'myFirstFont4';
-  letter-spacing: 0.1vw;
-} 
 
 .webgirl {
   height: auto;
-  width: 25vw;
+  width: 50%;
+}
+
+@media (min-width: 800px){
+  .webgirl {
+    height: auto;
+    width: 25vw;
+  }
 }
 
 .digitalsection {
